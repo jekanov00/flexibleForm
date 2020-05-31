@@ -1,1 +1,96 @@
 @import url("assets/css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/1792149/pexels-photo-1792149.jpeg?cs=srgb&dl=aerial-shot-of-ocean-1792149.jpg&fm=jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#contactForm {
+    box-shadow: 0 0 15px 6px black;
+    padding: 40px 30px;
+    margin: 5vmin 10px;
+    color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#pageTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.formInfo {
+    margin: 20px 0;
+}
+
+#contactForm > hr {
+    margin: 10px;
+}
+
+.formContainer input, .formContainer textarea, .formContainer select {
+    margin: 5px 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    width: 180px;
+    flex-grow: 1;
+}
+
+.formContainer input, .formContainer select {
+    height: 35px;
+}
+
+.formContainer textarea {
+    height: 100px;
+}
+
+#contactForm>.formContainer>input[name="phone"] {
+    width: 120px;
+}
+
+input#phone3 {
+    flex-grow: 2;
+}
+
+.formLabel {
+    line-height: 45px;
+    flex-basis: 160px;
+    margin-left: 10px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.formContainer:last-of-type {
+    justify-content: flex-end;
+}
+
+#formSubmit {
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    margin: 5px 10px;
+    width: calc(100% - 190px);
+    min-width: 220px;
+}
