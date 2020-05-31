@@ -19,6 +19,7 @@
                placeholder="First name"
                minlength="2"
                maxlength="20"
+               tabindex="1"
                required>
         <input aria-label="Last name"
                type="text"
@@ -27,6 +28,7 @@
                placeholder="Last name"
                minlength="2"
                maxlength="20"
+               tabindex="1"
                required>
     </div>
     <div class="formContainer">
@@ -35,6 +37,7 @@
                name="email"
                id="email"
                placeholder="your_email@mail.com"
+               tabindex="1"
                required>
     </div>
     <div class="formContainer">
@@ -46,6 +49,7 @@
                minlength="3"
                maxlength="3"
                pattern="[0-9]+"
+               tabindex="1"
                required>
         <input type="text"
                name="phone"
@@ -55,6 +59,7 @@
                minlength="3"
                maxlength="3"
                pattern="[0-9]+"
+               tabindex="1"
                required>
         <input type="text"
                name="phone"
@@ -64,11 +69,12 @@
                minlength="6"
                maxlength="6"
                pattern="[0-9]+"
+               tabindex="1"
                required>
     </div>
     <div class="formContainer">
         <label for="subject" class="formLabel">Message subject</label>
-        <select name="subject" id="subject" required>
+        <select name="subject" id="subject" tabindex="1" required>
             <option value="" disabled selected>&lt;-- Select message subject --&gt;</option>
             <option value="delivery">Delivery</option>
             <option value="assistance">Assistance</option>
@@ -83,11 +89,12 @@
                   maxlength="200"
                   minlength="5"
                   placeholder=" "
+                  tabindex="1"
                   required></textarea>
     </div>
     <hr>
     <div class="formContainer">
-        <button type="submit" id="formSubmit">Submit form</button>
+        <button type="submit" id="formSubmit" tabindex="1">Submit form</button>
     </div>
 </form>
 </body>
