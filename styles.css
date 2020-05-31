@@ -94,3 +94,8 @@ input#phone3 {
     width: calc(100% - 190px);
     min-width: 220px;
 }
+
+input:invalid:not(:placeholder-shown):not(:focus), textarea:invalid:not(:placeholder-shown):not(:focus) {
+    border: 3px inset red;
+    background-color: pink;
+}

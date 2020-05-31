@@ -13,18 +13,58 @@
     <p class="formInfo">Please fill in your information and we'll be sending your order.</p>
     <div class="formContainer">
         <label for="firstName" class="formLabel">Your name</label>
-        <input type="text" name="firstName" id="firstName" placeholder="First name" required>
-        <input aria-label="Last name" type="text" name="lastName" id="lastName" placeholder="Last name" required>
+        <input type="text"
+               name="firstName"
+               id="firstName"
+               placeholder="First name"
+               minlength="2"
+               maxlength="20"
+               required>
+        <input aria-label="Last name"
+               type="text"
+               name="lastName"
+               id="lastName"
+               placeholder="Last name"
+               minlength="2"
+               maxlength="20"
+               required>
     </div>
     <div class="formContainer">
         <label for="email" class="formLabel">Your email</label>
-        <input type="email" name="email" id="email" placeholder="your_email@mail.com" required>
+        <input type="email"
+               name="email"
+               id="email"
+               placeholder="your_email@mail.com"
+               required>
     </div>
     <div class="formContainer">
         <label for="phone1" class="formLabel">Phone</label>
-        <input type="text" name="phone" id="phone1" placeholder="000" required>
-        <input type="text" name="phone" id="phone2" aria-label="Phone second part" placeholder="000" required>
-        <input type="text" name="phone" id="phone3" aria-label="Phone third part" placeholder="0000" required>
+        <input type="text"
+               name="phone"
+               id="phone1"
+               placeholder="000"
+               minlength="3"
+               maxlength="3"
+               pattern="[0-9]+"
+               required>
+        <input type="text"
+               name="phone"
+               id="phone2"
+               aria-label="Phone second part"
+               placeholder="000"
+               minlength="3"
+               maxlength="3"
+               pattern="[0-9]+"
+               required>
+        <input type="text"
+               name="phone"
+               id="phone3"
+               aria-label="Phone third part"
+               placeholder="0000"
+               minlength="6"
+               maxlength="6"
+               pattern="[0-9]+"
+               required>
     </div>
     <div class="formContainer">
         <label for="subject" class="formLabel">Message subject</label>
@@ -37,7 +77,12 @@
     </div>
     <div class="formContainer">
         <label for="message" class="formLabel">Message</label>
-        <textarea name="message" id="message" required></textarea>
+        <textarea name="message"
+                  id="message"
+                  maxlength="200"
+                  minlength="5"
+                  placeholder=" "
+                  required></textarea>
     </div>
     <hr>
     <div class="formContainer">
